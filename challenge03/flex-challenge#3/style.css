@@ -1,0 +1,176 @@
+*,
+*::before, 
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.3rem;
+}
+
+img {
+   max-width: 100%;
+}
+
+h1 {
+   font-size: 3rem;
+   margin-top: 0;
+}
+
+.main-header {
+   background-color:#136C72;
+   padding: 1rem 0;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   z-index: 1;
+}
+.nav__bar {
+   display: flex;
+   justify-content: space-between;
+   flex-grow: 1;
+   margin-left: 2rem;
+}
+.nav__list {
+   list-style: none;
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+}
+.nav__list--primary {
+   flex-grow: 1;
+   justify-content: center;
+
+   /* or we can use marign: 0 auto to center it in the middle */
+   /* margin: 0 auto; */
+  
+}
+@media(max-width: 40rem) {
+   .nav__bar {
+      justify-content: center;
+   }
+   .nav__list {
+      flex-direction: column;
+      align-items: center;
+   }
+}
+/* If the last two list items within the last ul are embeded within the first ul, 
+you can use this style to make the sign in and sign out positioned to the far-right */
+/* .nav__item--push--right {
+   margin-left: auto;
+} */
+.nav__link {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   font-size: 1.2rem;
+}
+.nav__link--button {
+   background-color: white;
+   color: #136C72;
+   border-radius: 15px;
+   padding: 0.2rem 0.5rem;
+}
+.container {
+   width: 80%;
+   max-width: 1100px;
+   margin: 0 auto;
+}
+.row {
+   /* display: flex => flex container */
+   display: flex;
+   justify-content: space-between;
+   /* can't use yet */
+   /* gap: 100px; */
+}
+
+.col {
+   /* these are now flex items */
+   /* width: 100%; */
+}
+
+/* .col + .col {
+   margin-left: 30px;
+} */
+
+.hero {
+   padding: 100px 0;
+   background-color: #23424A;
+   color: #FFF; 
+   margin-top: 4rem;
+}
+
+.hero__text { 
+   width: 62%;
+}
+
+.hero__img {
+   width: 32%;
+   align-self: flex-start;
+}
+.hero h1 {
+   margin-bottom: 2rem;
+}
+.hero p {
+   margin-bottom: 3em;
+   line-height: 1.5;
+   font-weight: 200;
+   font-size: 18px;
+}
+
+.btn {
+   display: inline-block;
+   text-decoration: none;
+   text-transform: uppercase; 
+   color: #23424A;
+   font-weight: 900;
+   background-color: #38CFD9;
+   padding: .75em 2em;
+   border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+   opacity: .75; 
+}
+.three-rows {
+  padding: 3rem 0;
+}
+.first-item {
+  width: 62%;
+  align-self: flex-start;
+}
+.first-item > p {
+   margin: 2rem 0;
+}
+.second-item {
+  width: 32%;
+  background-color: #136C72;
+  padding: 2rem 0;
+}
+.single-col {
+  text-align: center;
+  color: #fff;
+  padding: 0 2rem;
+}
+.single-col > h2 {
+   margin-bottom: 1rem;
+}
+.single-col + .single-col {
+  margin-top: 3.5rem;
+}
+.three-rows__title {
+  color: #136C72;
+}
+.col p {
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+

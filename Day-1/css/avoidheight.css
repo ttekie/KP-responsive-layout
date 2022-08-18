@@ -1,0 +1,24 @@
+* {
+   box-sizing: border-box;
+}
+html {
+   font-size: 2rem;
+}
+body {   
+   font-family: monospace;
+   font-size: 18px;
+}
+.parent {
+   background-color: tomato;
+   padding: 50px;
+   border: 2px solid #663399;
+   margin: 0 auto;
+}
+.child {
+   background-color:lightblue;
+   /* height: 250px; */
+   margin: 0 auto;
+   border: 2px solid green;
+   /* avoid fixed unit */
+}
+

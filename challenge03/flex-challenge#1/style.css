@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.3rem;
+}
+.hero {
+   background-color: #23424A;
+   padding: 2rem 0; 
+}
+.container {
+   width: 80%;
+   max-width: 1000px;
+   margin: 0 auto;
+   padding: 4rem 0;
+}
+.hero__text {
+   width: 60%;
+   max-width: 60rem;
+}
+.hero__title {
+   font-size: 3rem;
+   color: #fff;
+}
+.hero__body {
+   padding: 1.8rem 0;
+   margin-bottom: 1.5rem;
+   color: #fff;
+   line-height: 1.5;
+   text-align-last: center;
+}
+.btn {
+   display: inline-block;
+   padding: 1rem 3rem;
+   background-color: #38CFD9;
+   text-decoration: none;
+   color: #23424A;
+   font-weight: 700;
+   font-size: 20px;
+   text-transform: uppercase;
+   border-radius: 5rem;
+   font-family: inherit;
+}
+.btn:hover,
+.btn:focus {
+   opacity: 0.7;
+}
+.flex-row {
+   display: flex;
+   gap: 3rem;
+}
+.hero__image {
+   align-self: flex-start;
+}
+
+.three-col {
+   text-align: center;
+   padding: 3rem 0;
+}
+
+p {   
+   font-weight: 300;
+}
+.two-col {
+   background-color: #136C72;
+   color: #fff;
+   padding: 3rem 0;
+   text-align: center;
+}
+h2 {
+   text-align: center;
+   margin-bottom: 1.5rem;
+}
+.three-col__title {
+   color: #87629A;
+}
+
+/* .col + .col{   
+   margin-left: 3rem;
+} */
